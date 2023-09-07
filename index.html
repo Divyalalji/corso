@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corso-Training Course</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700,700i&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/5e93b8cccf.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+  <link rel="icon" href="./images/favicon.ico">
+ 
+
+  <style>
+    .bg {
+      height: auto;
+      width: 100%;
+      background-color: #ffbd50;
+    }
+
+    .form-1 p {
+      margin-bottom: 1.5rem;
+    }
+
+    .bt-round {
+      background-color: #ffbd50;
+      border-radius: 50%;
+      border: none;
+      height: 50px;
+      width: 70px;
+      font-weight: 800;
+      font-size: 1.5rem !important;
+    }
+
+    .video-bg {
+      background-image: url(./images/play.jpg);
+      height: auto;
+      width: 100%;
+      padding-top: 20%;
+      padding-bottom: 20%;
+    }
+
+    .h41 {
+      text-align: center;
+      padding: 20px;
+      color: rgb(189, 189, 189) !important;
+    }
+    /* .f-bg {
+      background-color: black;
+      } */
+      .nav-item:hover{
+       color: #ffbd50;
+      }
+      .btn1:hover{
+        border: 1px solid #ffbd50;
+        color: #ffbd50;
+        background-color:transparent;
+      }
+      .btn2:hover{
+       
+        color: black;
+        background-color: white;
+      }
+      .btn3:hover{
+        color: white;
+        border: 1px solid white;
+        background-color: black;
+      }
+      
+      /* slider start */
+h4{
+    text-align:center;
+    padding: 20px;
+    color: rgb(189, 189, 189) !important;
+  }
+  /* Slider */
+  
+  .slick-slide {
+      margin: 0px 20px;
+  }
+  
+  .slick-slide img {
+      width: 100%;
+  }
+  
+  .slick-slider
+  {
+      position: relative;
+      display: block;
+      box-sizing: border-box;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+              user-select: none;
+      -webkit-touch-callout: none;
+      -khtml-user-select: none;
+      -ms-touch-action: pan-y;
+          touch-action: pan-y;
+      -webkit-tap-highlight-color: transparent;
+  }
+  
+  .slick-list
+  {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+  }
+  .slick-list:focus
+  {
+      outline: none;
+  }
+  .slick-list.dragging
+  {
+      cursor: pointer;
+      cursor: hand;
+  }
+  
+  .slick-slider .slick-track,
+  .slick-slider .slick-list
+  {
+      -webkit-transform: translate3d(0, 0, 0);
+         -moz-transform: translate3d(0, 0, 0);
+          -ms-transform: translate3d(0, 0, 0);
+           -o-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+  }
+  
+  .slick-track
+  {
+      position: relative;
+      top: 0;
+      left: 0;
+      display: block;
+  }
+  .slick-track:before,
+  .slick-track:after
+  {
+      display: table;
+      content: '';
+  }
+  .slick-track:after
+  {
+      clear: both;
+  }
+  .slick-loading .slick-track
+  {
+      visibility: hidden;
+  }
+  
+  .slick-slide
+  {
+      display: none;
+      float: left;
+      height: 100%;
+      min-height: 1px;
+  }
+  [dir='rtl'] .slick-slide
+  {
+      float: right;
+  }
+  .slick-slide img
+  {
+      display: block;
+  }
+  .slick-slide.slick-loading img
+  {
+      display: none;
+  }
+  .slick-slide.dragging img
+  {
+      pointer-events: none;
+  }
+  .slick-initialized .slick-slide
+  {
+      display: block;
+  }
+  .slick-loading .slick-slide
+  {
+      visibility: hidden;
+  }
+  .slick-vertical .slick-slide
+  {
+      display: block;
+      height: auto;
+      border: 1px solid transparent;
+  }
+  .slick-arrow.slick-hidden {
+      display: none;
+  }
+  .abc{
+    background: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(./images/header-background.jpg) center center no-repeat;
+  background-size: cover;
+  text-align: center;
+  }
+    
+
+  
+  </style>
+
+
+</head>
+
+<body>
+  <!-- THIS IS NAVBAR-->
+  <nav class="nav navbar bg-dark text-light navbar-expand-md navbar-dark fixed-top">
+    <div class="container">
+      <div class="navbar-brand"><img src="./images/logo.svg" height="60px" width="100px"></div>
+      <button type="button" data-bs-toggle="collapse" data-bs-target="#first" class="navbar-toggler">
+        <span class="bg-secondary navbar-toggler-icon"> </span>
+      </button>
+
+      <div class=" collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto text-light ">
+          <li class="nav-item text-light"><a href="" class="nav-link"> REGISTER</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">DETAILS </a></li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              DATE
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">ARTICLE DETAIL</a></li>
+              <li><a class="dropdown-item" href="#">TERM CONDITION</a></li>
+
+              <li><a class="dropdown-item" href="#">PRIVACY POLICY</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="#about" class="nav-link">CONTACT </a></li>
+
+        </ul>
+        <a class="p-1" target="_blank" href="https://www.facebook.com/divyalalji9?mibextid=ZbWKwL"><i
+          class="fa-brands fa-facebook fa" style="color: #ffbd50;"></i></a>
+      <a class="p-1" target="_blank" href="https://www.facebook.com/divyalalji9?mibextid=ZbWKwL"><i
+          class="fa-brands fa-square-twitter fa" style="color: #ffbd50;"></i></a>
+      </div>
+    </div>
+  </nav>
+
+ <div style="position: relative; z-index: 1;">
+  <div class="text-center bg-dark text-light abc" style="padding-top: 10%;">
+    <h6 class="text-bg-dark fw-normal pt-5">This offer has expired!</h6>
+    <h1 class="fw-bold">SEO Training Course</h1>
+    <h6 class="fw-normal"> Do you feel like you're doing a lot of guess work when it comes to SEO for your<br> website?
+      Take the SEO training course to change that</h6>
+    <div class="mt-4 pb-4">
+      <button class="btn btn-warning p-3 btn1" style="border-radius: 25px;">REGISTER</button>
+      <button class="btn btn-light p-3 btn2" style="border-radius: 25px; background-color: transparent; color: white; border: 1px solid white;">DISCOVER
+
+      </button>
+    </div>
+  </div>
+ </div>
+  <!--carousel-->
+  <div class="abc">
+  <div id="carouselExampleControls" class="slide pt-3" style="margin-left: 20%; position: relative; top: 50px; z-index: 2;" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-75" src="./images/slide1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-75" src="./images/slide2.jpg" class="d-block w-100" alt="...">
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+  <!--Form section start-->
+  <div class="bg p-5">
+    <div class="container" style="position: relative; top: 20%;">
+      <div class="row">
+        <div class="col-lg-6 p-5">
+          <h2>Register Using The Form</h2>
+          <p class="form-1">It's easy to register for the course, just fill out the form and click submit. Then you will
+            be
+            registered
+            for one of the best SEO training courses in the industry</p>
+          <ul style="list-style-type: square;" class="li-space-lg">
+            <li><b>Your information is required</b> to complete the registration</li>
+            <li><b>It's safe with us</b> and will not be used for marketing</li>
+            <li> <b>You will receive</b> a confirmation email in less than 24h</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-6 p-5">
+          <form novalidate class="needs-validation">
+            <div class="mb-3">
+              <input type="name" class="form-control w-100" placeholder="complete name" id="exampleInputEmail1" required
+                aria-describedby="emailHelp">
+              <div class="valid-feedback">Please fill out this field. </div>
+              <div class="invalid-feedback">invalid this feild</div>
+            </div>
+
+            <div class="mb-3">
+              <input type="email" class="form-control w-100" placeholder="email id" id="exampleInputPassword1" required>
+              <div class="valid-feedback">Please fill out this field. </div>
+              <div class="invalid-feedback">invalid this feild</div>
+
+            </div>
+            <div class="mb-3 ">
+              <input type="number" class="form-control w-100" placeholder="Phone" id="exampleInputEmail1" required
+                aria-describedby="emailHelp">
+              <div class="valid-feedback">Please fill out this field. </div>
+              <div class="invalid-feedback">invalid this feild</div>
+            </div>
+
+            <div class="mb-3">
+              <input type="checkbox" class="form-check-input" required> &nbsp; I've read and agree to Corso's written
+              Privacy Policy and Terms & Conditions
+              <div class="valid-feedback">Please fill out this field. </div>
+              <div class="invalid-feedback">invalid this feild</div>
+            </div>
+
+            <button type="submit" class="btn btn2 w-100 border-2 border-dark fw-bold"
+              style="border-radius: 20px;">REGISTER</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Form section end-->
+
+  <!--carousel-->
+  <div class="container">
+    <h4 style="color: gray;">FEATURED IN</h4>
+    <section class="customer-logos slider">
+      <div class="slide"><img src="./images/logo1.png"></div>
+      <div class="slide"><img src="./images/logo2.png"></div>
+      <div class="slide"><img src="./images/logo3.png"></div>
+      <div class="slide"><img src="./images/logo4.png"></div>
+      <div class="slide"><img src="./images/logo5.png"></div>
+      <div class="slide"><img src="./images/logo2.png"></div>
+      <div class="slide"><img src="./images/logo3.png"></div>
+    </section>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 4
+          }
+        }, {
+          breakpoint: 520,
+          settings: {
+            slidesToShow: 3
+          }
+        }]
+      });
+    });
+
+  </script>
+
+
+
+
+
+  <!--flex part 1-->
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-lg-6">
+        <img class="w-75" src="./images/flex1.jpg">
+      </div>
+      <div class="col-lg-6">
+        <h2 class="fw-bold font-Montserrat pt-lg-5">I'm Garry Your Trainer</h2>
+        <p class="fw-light text-lg-start">Hi everybody! I am Garry and I will be your main instructor durnig the SEO
+          training course. I have more
+          than 10 years experience in SEO and I am very passionate about this field. Register for the course and let's
+          meet.</p>
+        <p class="fw-light text-lg-start">
+          Teaching students all about the beste SEO techniques is something I love to do as a full-time job
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="text-center fw-bold p-5">What Will You Learn In Our SEO <br> Focused Training Course</h2>
+      </div> <!-- end of col -->
+    </div> <!-- end of row -->
+    <!--training courses start -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="d-flex">
+            <button class="bt-round mt-4">1</button>
+            <p class="p-4"><span style=" font-weight: bold;">Optimizing your
+                site for mobile devices </span><br>
+              One of the keys of great SEO is having a mobile friendly website which works smoothly on all devices</p>
+          </div>
+
+          <div class="d-flex">
+            <button class="bt-round mt-4">2</button>
+            <p class="p-4"><span style="font-weight: bold;">Understand how
+                users search</span><br>
+              It's not enough anymore to find relevant industry keywords and write huge amounts of content</p>
+          </div>
+
+          <div class="d-flex">
+            <button class="bt-round mt-3">3</button>
+            <p class="p-4"><span style="font-weight: bold;">Write for humans
+                optimize for engines </span><br>
+              Write well structured and understandable articles not just a mix of paragraphs that contain keywords</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="d-flex">
+            <button class="bt-round mt-4">4</button>
+            <p class="p-4"><span style="font-weight: bold;">Analyse your existing
+                search traffic </span><br>
+              A good action plan comes out of understanding where your current position is and the environment</p>
+          </div>
+
+          <div class="d-flex">
+            <button class="bt-round mt-4">5</button>
+            <p class="p-4"><span style="font-weight: bold;"> Keep updated with
+                the
+                latest changes</span><br>
+              Google changes it's search indexing algorithm twice a year so it's important to stay updated with news</p>
+          </div>
+
+          <div class="d-flex">
+            <button class="bt-round mt-3">6</button>
+            <p class="p-4"><span style="font-weight: bold;">Learn the most
+                important ranking factors </span><br>
+              Learn which are the most important search engine ranking factors and optimize your website accordnigly</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--flex part 2-->
+    <div class="container p-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2 class="fw-bold font-Montserrat p-5">Who Should Attend The <br>SEO Training Course</h2>
+          <p class="fw-light text-lg-start">This course is for anyone passionate about the web and especially fit for
+            those seeking to improve their
+            online presence for company websites and blogs</p>
+          <button class="btn btn-warning p-lg-2 w-25 ms-3 fw-bold btn2" style="border-radius: 30px;">LIGHTBOX</button>
+        </div>
+        <div class="col-lg-6">
+          <img class="w-75" src="./images/flex2.jpg">
+        </div>
+      </div>
+    </div>
+
+    <!--video section start-->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="text-center p-5 fw-bold">Course Video Presentation</h2><br>
+          <div class="video-bg d-flex justify-content-center align-content-center">
+            <div style="position: relative; z-index: 2">
+              <button class="video-play-button"
+                style="border-radius: 50%; background-color: rgb(255, 193, 34); height: 70px; width: 70px; z-index: 3; border-style: none;"><img
+                  src="./images/play-button.png" height="30px" width="30px"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--video section start-->
+    <!--Key takeaway in center-->
+    <h2 class="fw-bold text-center p-5">Key Takeaways</h2>
+    <p class="text-center mt-lg-3">
+      Here are the main topics that will be covered in the SEO training course. They cover all the<br> basics of SEO and
+      even some advanced techniques that will help you along the way
+    </p>
+
+    <!--cards-->
+    <div class="container">
+      <div class="row p-5">
+        <!--card 1-->
+        <div class="col-lg-4 text-center">
+          <img src="./images/react.png">
+          <h4 class="fw-bold text-dark">Position Analysis</h4>
+          <p>Understand where your website is <br> currently positioned in search <br> engine queries</p>
+        </div>
+        <!--card 2-->
+        <div class="col-lg-4 text-center">
+          <img src="./images/keys.png">
+          <h4 class="fw-bold  text-dark">Keyword Planning</h4>
+          <p>Find the best relevant keywords <br>that fit your website SEO strategy <br> in the long run</p>
+        </div>
+        <!--card 3-->
+        <div class="col-lg-4 text-center">
+          <img src="./images/article.png">
+          <h4 class="fw-bold  text-dark">Writing Articles</h4>
+          <p>How to plan your content strategy <br> and write articles that are <br>optimized for SEO</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!--cards-->
+    <div class="container">
+      <div class="row p-5">
+        <!--card 4-->
+        <div class="col-lg-4 text-center">
+          <img src="./images/link.png">
+          <h4 class="fw-bold text-dark">Gathering Backlinks</h4>
+          <p>Backlinks are vital for SEO and we'll <br> teach you everything there is to <br> know about them</p>
+        </div>
+        <!--card 5-->
+        <div class="col-lg-4 text-center">
+          <img src="./images/partnership.png">
+          <h4 class="fw-bold  text-dark">Build Partnerships</h4>
+          <p>Partnerships will help you establish <br> your website or blog as an <br> authority in your field</p>
+        </div>
+        <!--card 6-->
+        <div class="col-lg-4 text-center">
+          <img src="./images/graph.png">
+          <h4 class="fw-bold  text-dark">Evaluate Actions</h4>
+          <p>Learn how to use the right <br> analytics tools to evaluate your SEO <br> actions and improve them</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Testimonial-->
+    <h3 class="fw-bold text-center pt-5">Check out our attendees testimonials from <br> previous editions of the SEO
+      Training
+    </h3>
+
+
+    <div class="container bg-dark text-light" style="border-radius: 10px;">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="text-container text-center p-5">
+            <h2 class="fw-bold">December 22nd 2020 at <br>Innovation Hub Space</h2>
+            <p class="pt-5">Our mission is to help people do better SEO. The team is excited to invite you to the next
+              SEO Training<br> Course session which undoubtedly will provide you with the necessary skills to improve
+              your online <br> presence. Fill out the form to register and we'll contact you in less than 24h</p>
+            <button class="btn btn-warning p-3 w-25 btn3" style="border-radius: 20px;">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--heading in center-->
+    <h3 class="text-center fw-bold p-5">Stay updated with news by subscribing to <br>our newsletter and our social
+      channels</h3>
+    <!--2nd validate  form-->
+    <div class="text-center">
+      <div class="mb-3">
+        <input type="email" class="form-control" placeholder="Email" id="exampleInputPassword1" required>
+        <div class="valid-feedback">Please fill out this field. </div>
+        <div class="invalid-feedback">invalid this feild</div>
+      </div>
+      <div class="mb-3">
+        <input type="checkbox" class="form-check-input" required> &nbsp; I've read and agree to Corso's written
+        Privacy Policy and Terms & Conditions
+        <div class="valid-feedback">Please fill out this field. </div>
+        <div class="invalid-feedback">invalid this feild</div>
+      </div>
+    </div>
+
+    <div class="text-center"><button type="submit" class="btn btn-warning w-25 fw-bold btn2"
+        style="border-radius: 20px;">SIGN UP</button></div>
+    <!--social icons-->
+    <div class=" mt-4 text-center p-3">
+      <a class="p-3" target="_blank" href="https://www.facebook.com/divyalalji9?mibextid=ZbWKwL"><i
+          class="fa-brands fa-facebook fa-2xl" style="color: #ffbd50;"></i></a>
+      <a class="p-3" target="_blank" href="https://www.facebook.com/divyalalji9?mibextid=ZbWKwL"><i
+          class="fa-brands fa-square-twitter fa-2xl" style="color: #ffbd50;"></i></a>
+      <a class="p-3" target="_blank" href="https://www.facebook.com/divyalalji9?mibextid=ZbWKwL"><i
+          class="fa-brands fa-pinterest fa-2xl" style="color: #ffbd50;"></i></a>
+      <a class="p-3" target="_blank" href="https://instagram.com/_di_vi_09?igshid=ZGUzMzM3NWJiOQ=="><i
+          class="fa-brands fa-square-instagram fa-2xl" style="color: #ffbd50;"></i></a>
+      <a class="p-3" target="_blank" href="https://www.linkedin.com/in/divya-lalji-a88b13208"><i
+          class="fa-brands fa-linkedin fa-2xl" style="color: #ffbd50;"></i></a>
+</div>
+  </div>
+
+
+
+    <!--this is footer-->
+    <!--Form section start-->
+    <div class="bg mt-4">
+      <div class="container" style="position: relative; top: 20%;">
+    <div class="row">
+          <div class="col-lg-6 p-5">
+            <h2 class="fw-bold">Contact Details</h2>
+            <p class="form-1">For registration questions please get in touch using the <br>contact details below. For any questions use the form.</p>
+            <h3 class="fw-bold pt-3">Main Office Location</h3>
+            <ul style="list-style-type: square;" class="li-space-lg">
+              <li>22 Innovative, San Francisco, CA 94043, US</li>
+              <li>+44 68 554 332,     +44 31 276 112</li>
+              <li>
+                contact@zigo.com www.zigo.com</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6 p-5">
+            <form novalidate class="needs-validation">
+              <div class="mb-3">
+                <input type="name" class="form-control w-100" placeholder="Name" id="exampleInputEmail1"
+                  required aria-describedby="emailHelp">
+                <div class="valid-feedback">Please fill out this field. </div>
+                <div class="invalid-feedback">invalid this feild</div>
+              </div>
+
+              <div class="mb-3">
+                <input type="email" class="form-control w-100" placeholder="Email" id="exampleInputPassword1"
+                  required>
+                <div class="valid-feedback">Please fill out this field. </div>
+                <div class="invalid-feedback">invalid this feild</div>
+
+              </div>
+              <div class="mb-3 ">
+                <textarea class="form-control w-100" placeholder="Your Message" id="exampleInputEmail1" required
+                  aria-describedby="emailHelp"></textarea>
+                <div class="valid-feedback">Please fill out this field. </div>
+                <div class="invalid-feedback">invalid this feild</div>
+              </div>
+
+              <div class="mb-3">
+                <input type="checkbox" class="form-check-input" required> &nbsp; I've read and agree to Corso's written
+                Privacy Policy and Terms & Conditions
+                <div class="valid-feedback">Please fill out this field. </div>
+                <div class="invalid-feedback">invalid this feild</div>
+              </div>
+
+              <button type="submit" class="btn w-100 border-2 border-dark fw-bold btn2"
+                style="border-radius: 20px;">SUBMIT</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Form section end-->
+    <!--footer with image-->
+    
+<!--footer start-->
+<footer>
+  <div class="f-bg">
+    <div class="container-fluid abc">
+      <div class="row p-lg-5">
+        <div class="col-md-3">
+          <h5 class="text-light">About Corso</h5>
+          <p class="text-light">We're passionate about teaching people how to do better SEO for their online presence
+          </p>
+        </div>
+
+        <div class="col-md-3">
+          <h5 class="text-light ps-3">Links</h5>
+          <ul style="list-style: square;" class="text-light">
+            <li>Terms & Conditions</li>
+            <li>Privacy Policy</li>
+            <li>Article Details</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h5 class="text-light ps-3">Links</h5>
+          <ul style="list-style: square;" class="text-light">
+            <li>Article Details</li>
+            <li>Terms & Conditions</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h5 class="text-light">Social Media</h5>
+          <p class="text-light">For news & updates follow us</p>
+          <div class="gap-2">
+          <a href="#"><i class="fa-brands fa-facebook-f p-2" style="color: #fdfdfc;"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter p-2" style="color: #f9fafb;"></i></a>
+          <a href="#"><i class="fa-brands fa-pinterest-p p-2" style="color: #f1f2f4;"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram p-2" style="color: #f9fafb;"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in p-2" style="color: #fcfcfc;"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube p-2" style="color: #fcfcfc;"></i></a>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+
+
+    <div class="container-fluid bg-dark pt-3 pb-3">
+      <div class="row">
+        <div class="col-md-12 text-center text-light">
+          Copyright © 2020 Inovatik - All rights reserved<br>
+          Distributed By: <u> ThemeWagon</u>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--footer end-->
+
+
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
